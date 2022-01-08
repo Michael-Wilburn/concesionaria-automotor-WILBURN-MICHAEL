@@ -4,11 +4,11 @@
     "sources": [
         "styles.scss",
         "_header.scss",
-        "_main_index.scss",
-        "_main_vehiculos.scss",
-        "_main_staff.scss",
-        "_main_financiacion.scss",
-        "_main_contacto.scss",
+        "_index.scss",
+        "_vehiculos.scss",
+        "_staff.scss",
+        "_financiacion.scss",
+        "_contacto.scss",
         "_footer.scss",
         "_gracias.scss"
     ],
