@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: black;
+    color: white;
+    display: grid;
+    width: 100%;
+    grid-template-areas: "head"
+                         "main"
+                         "foot";
+}
+
+
+@media screen and (max-width: 768px) {
+    main{
+        margin-top: 5.05rem;
+    }
+}
+
+@import './header';
+@import './main_index';
+@import'./main_vehiculos';
+@import'./main_staff';
+@import'./main_financiacion';
+@import'./main_contacto';
+@import'./footer';
+@import'./gracias';

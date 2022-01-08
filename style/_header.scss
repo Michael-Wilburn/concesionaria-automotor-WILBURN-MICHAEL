@@ -1,0 +1,114 @@
+header{
+    grid-area: head;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    height: 5rem;
+    align-items: center; 
+}
+.header__logo{
+    margin: 0 0 0 2rem;
+}
+.header__menu{
+    margin: 0 2rem 0 0;
+}
+.header__menu__list li{
+    display: inline;
+    margin: 0.5rem;
+}
+.header__menu__list li a{
+    display: inline;
+    margin: 0.5rem;
+    transition: text-decoration-color 1s;
+}
+.header__menu__list li a:hover{
+    text-decoration-style: solid;
+    text-decoration: underline;
+    text-decoration-color: red;
+    text-decoration-thickness: 3px;
+}
+.header__menu_list li{
+    display: inline;
+    text-decoration: none;
+}
+.header__menu__list li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+}
+label #sign-one,
+label #sign-two {
+    font-size: 2rem;
+    display: none;
+    cursor: pointer;
+    margin-right: 1.5rem;
+}
+#checkbox {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: 100%;
+    background-color: black;
+}
+
+.header__logo{
+    img {
+        max-width: 2.5rem;
+        max-height: 2.5rem;
+    }  
+}
+.header__menu{
+    display: none;  
+}
+.header__menu__list{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center; 
+    align-items: center;
+    width: 100vw;
+}
+.header__menu__list  {
+    
+    li{ 
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 3rem ;
+        a{
+            text-decoration: underline;
+            text-decoration-thickness: 0.2rem;
+            text-decoration-color: red;
+        }
+    }
+}
+#checkbox:checked ~ .header__menu{
+    display: flex;
+    position: absolute;
+    top: 5.05rem;
+    z-index: 10;
+    background-color: black;
+    opacity: 0.8;
+    
+}
+label #sign-one{
+    display: block;
+    margin-right: 1.5rem;
+}
+#checkbox:checked ~ label #sign-one {
+    display: none;
+}
+#checkbox:checked ~ label #sign-two {
+    display: block;
+}
+}
+
+
+

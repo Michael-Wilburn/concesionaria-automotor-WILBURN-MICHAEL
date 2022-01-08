@@ -1,0 +1,32 @@
+.contacto{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    justify-items: center;
+}
+iframe{
+    width: 60vw;
+    height: 70vh;
+    border:solid 1px white;
+}
+
+form{
+    width: 30vw;
+    padding: 2rem;
+    height: 70vh;
+    border:solid 1px white;
+    border-radius: 1rem;
+}
+
+@media screen and (max-width:1000px) {
+   .contacto{
+       grid-template-columns: 1fr;
+   }
+   iframe{
+    width: 90vw;
+    margin-bottom: 2rem;
+   }
+    form{
+    width: 80vw;
+    }
+
+}

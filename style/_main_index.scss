@@ -1,0 +1,131 @@
+main {
+    grid-area: main;
+}
+
+.intro {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.intro__carousel-wrapper{
+    height:65vh;
+    position:relative;
+    width:100vw;
+}
+.carousel-item{
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    opacity:0;
+    transition: all 0.5s ease-in-out;
+}
+.arrow{
+    border: solid white;
+    border-width: 0 0.25rem 0.25rem 0;
+    display: inline-block;
+    padding: 1rem;
+}
+.arrow:hover{
+    border: solid black;
+    border-width: 0 4px 4px 0;
+}
+.arrow-prev{
+    left: 1rem;
+    position:absolute;
+    top:50%;
+    transform: rotate(135deg);
+}
+.arrow-next{
+    right: 1rem;
+    position:absolute;
+    top:50%;
+    transform: rotate(-45deg);
+}
+#item-1,#item-2,#item-3{
+    display: none;
+    
+}
+.item-1 {
+    z-index: 2;
+    opacity: 1;
+    background:url(../assets/cars1.jpeg);
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+}
+.item-2{
+    background:url(../assets/cars2.jpeg);
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+}
+.item-3{
+    background:url(../assets/cars3.jpeg);
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+}
+*:target ~ .item-1 {
+    opacity: 0;
+}
+#item-1:target ~ .item-1 {
+    opacity: 1;
+}
+#item-2:target ~ .item-2, #item-3:target ~ .item-3 {
+    z-index: 3;
+    opacity: 1;
+}
+::-webkit-scrollbar {
+    display: none;
+    color: red;
+}
+// animacion clase 
+.animate__animated{
+    width: 100%;
+    text-align: center;
+    font-size: 2rem;
+    margin: 2rem 0 2rem 0;
+    font-style: italic;
+}
+.intro__title--red {
+    color: red;
+    font-size: 2rem;
+}
+.intro__text{
+    font-size: 1.3rem;
+    width: 50vw;
+    text-align: center;
+}
+.intro__point{
+    color: red;
+    font-size: 3rem;
+}
+
+@media screen and (max-width:768px) {
+    .intro__carousel-wrapper{
+        height:46vh;
+    }
+    .intro__title{
+        font-size: 1.5rem;
+     }
+     .intro__title--red {
+        font-size: 1.8rem;
+     }
+     .intro__text{
+        font-size: 1rem;
+        width: 70vw;
+     }
+     .intro__point{
+        font-size: 1.5rem;
+     }
+}
