@@ -12,7 +12,12 @@ header{
 }
 .header__menu{
     margin: 0 2rem 0 0;
+
+    ul{
+        margin: 0;
+    }
 }
+
 .header__menu__list li{
     display: inline;
     margin: 0.5rem;
