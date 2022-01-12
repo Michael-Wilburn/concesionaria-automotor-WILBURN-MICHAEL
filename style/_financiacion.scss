@@ -1,35 +1,34 @@
-.financiacion {
-    display: grid;
-    grid-template-rows:  0fr 1fr 1fr 1fr;
-    justify-content: center;
-    text-align: center;
-}
-.financiacion__title{
-    text-transform: uppercase;
-    font-style: italic;
-    text-decoration-style: solid;
-    text-decoration: underline;
-    text-decoration-color: red;
-    text-decoration-thickness: 3px;
-    
-}
-.description__card {
-    text-align: center;
-    background-color: white;
-    color: black;
-    padding: 1rem 2rem 1rem 2rem;
-    margin:1.5rem;    
-    max-width: 40rem;
-    border-radius: 1rem;
-    border: solid 0.2rem #353535;
-}
-.description__card--title{
-    margin-bottom: 1rem;
-    border-bottom: 0.1rem solid red;
-  
-}
+// .financiacion {
+//     display: grid;
+//     grid-template-rows:  0fr 1fr 1fr 1fr;
+//     justify-content: center;
+//     text-align: center;
+// }
+// .financiacion__title{
+//     text-transform: uppercase;
+//     font-style: italic;
+//     text-decoration-style: solid;
+//     text-decoration: underline;
+//     text-decoration-color: red;
+//     text-decoration-thickness: 3px;
+// }
+// .description__card {
+//     text-align: center;
+//     background-color: white;
+//     color: black;
+//     padding: 1rem 2rem 1rem 2rem;
+//     margin:1.5rem;    
+//     max-width: 40rem;
+//     border-radius: 1rem;
+//     border: solid 0.2rem #353535;
+// }
+// .description__card--title{
+//     margin-bottom: 1rem;
+//     border-bottom: 0.1rem solid red;
+// }
 
 .description__card--brand{
     color: red;
     font-weight: bold;
 }
+
