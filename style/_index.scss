@@ -1,21 +1,19 @@
 main {
   grid-area: main;
 }
-
 .intro {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
 }
-
 .box-img1 {
   background: url(../assets/cars1.jpeg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  border-top: 1px solid white;
-  border-bottom: 1px solid white;
+  border-top: 1px solid $firstColor;
+  border-bottom: 1px solid $firstColor;
   height: 65vh;
 }
 .box-img2 {
@@ -23,8 +21,8 @@ main {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  border-top: 1px solid white;
-  border-bottom: 1px solid white;
+  border-top: 1px solid $firstColor;
+  border-bottom: 1px solid $firstColor;
   height: 65vh;
 }
 .box-img3 {
@@ -32,8 +30,8 @@ main {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  border-top: 1px solid white;
-  border-bottom: 1px solid white;
+  border-top: 1px solid $firstColor;
+  border-bottom: 1px solid $firstColor;
   height: 65vh;
 }
 
@@ -46,16 +44,17 @@ main {
   font-style: italic;
 }
 .intro__title--red {
-  color: red;
+  color: $decorationColor;
   font-size: 2rem;
 }
 .intro__text {
   font-size: 1.3rem;
   width: 50vw;
   text-align: center;
+  color: $firstColor;
 }
 .intro__point {
-  color: red;
+  color: $decorationColor;
   font-size: 3rem;
 }
 

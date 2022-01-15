@@ -28,7 +28,7 @@ header{
 .header__menu__list li a:hover{
     text-decoration-style: solid;
     text-decoration: underline;
-    text-decoration-color: red;
+    text-decoration-color: $decorationColor;
     text-decoration-thickness: 3px;
 }
 .header__menu_list li{
@@ -38,7 +38,7 @@ header{
 .header__menu__list li a {
     text-decoration: none;
     text-transform: uppercase;
-    color: white;
+    color: $firstColor;
 }
 label #sign-one,
 label #sign-two {
@@ -58,7 +58,7 @@ label #sign-two {
     left: 0;
     z-index: 10;
     width: 100%;
-    background-color: black;
+    background-color: $secondColor;
 }
 
 .header__logo{
@@ -89,7 +89,7 @@ label #sign-two {
         a{
             text-decoration: underline;
             text-decoration-thickness: 0.2rem;
-            text-decoration-color: red;
+            text-decoration-color: $decorationColor;
         }
     }
 }
@@ -98,7 +98,7 @@ label #sign-two {
     position: absolute;
     top: 5.05rem;
     z-index: 10;
-    background-color: black;
+    background-color: $secondColor;
     opacity: 0.8;
     
 }

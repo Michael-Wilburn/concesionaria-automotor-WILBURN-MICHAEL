@@ -3,10 +3,22 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+@import './variables';
+@import './header';
+@import './index';
+@import'./vehiculos';
+@import'./staff';
+@import'./financiacion';
+@import'./contacto';
+@import'./footer';
+@import'./gracias';
+
+
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: black;
-    color: white;
+    background-color: $secondColor;
+    color: $firstColor;
     display: grid;
     width: 100%;
     grid-template-areas: "head"
@@ -21,11 +33,4 @@ body {
     }
 }
 
-@import './header';
-@import './index';
-@import'./vehiculos';
-@import'./staff';
-@import'./financiacion';
-@import'./contacto';
-@import'./footer';
-@import'./gracias';
+

@@ -7,19 +7,19 @@
     margin: 1rem;
 }
 .nav-link {
-    color: white;
+    color: $firstColor;
     text-transform: uppercase;
 }
 .nav-link:hover{
     transform: scale(1.02);
-    color: white;
+    color: $firstColor;
 }
 .card_description{
-    color: black;
+    color: $secondColor;
     font-weight: 500;
 }
 .card-title{
-    color: black;
+    color: $secondColor;
 }
 .card-body {
     padding: 0.5rem 0 0.5rem 0;
@@ -27,11 +27,11 @@
 .whatsapp_link{
     text-decoration: none;
     cursor: pointer;
-    color: white;
+    color: $firstColor;
 }
 
 .whatsapp_link:hover{
-    color: white;
+    color: $firstColor;
 }
 
 @media screen and (max-width:1000px) {

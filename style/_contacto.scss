@@ -6,14 +6,14 @@
 iframe{
     width: 60vw;
     height: 70vh;
-    border:solid 1px white;
+    border:solid 1px $firstColor;
 }
 
 form{
     width: 30vw;
     padding: 2rem;
     height: 70vh;
-    border:solid 1px white;
+    border:solid 1px $firstColor;
     border-radius: 1rem;
 }
 

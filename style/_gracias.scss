@@ -2,12 +2,12 @@
   margin: 2rem 0 2rem;
   width: 100%;
   height: 4rem;
-  background-color: white;
+  background-color: $firstColor;
   overflow: hidden;
 }
 .animation {
 
-color: black;
+color: $secondColor;
 position: relative;
 animation-name: animar;
 animation-duration: 6s;

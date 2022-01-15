@@ -6,23 +6,23 @@ footer{
     margin: 0 4rem 0 0;
 }
 .copyright__red{
-    color: red;
+    color: $decorationColor;
     font-style: italic;
     font-weight: bold;
 }
 .fab {
-    color: white;
+    color: $firstColor;
     font-size: 2rem;
     margin:0 0.5rem 0 0 ;
 }
 .fab:hover{
-    color:red;
+    color:$decorationColor;
 }
 .footer{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: flex-end;
+    align-items: center;
     min-height: 8rem;
     margin-top: 3rem;
 }
