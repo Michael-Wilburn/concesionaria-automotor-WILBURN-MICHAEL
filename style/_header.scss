@@ -17,7 +17,6 @@ header{
         margin: 0;
     }
 }
-
 .header__menu__list li{
     display: inline;
     margin: 0.5rem;
@@ -25,7 +24,6 @@ header{
 .header__menu__list li a{
     display: inline;
     margin: 0.5rem;
-    transition: text-decoration-color 1s;
 }
 .header__menu__list li a:hover{
     text-decoration-style: solid;

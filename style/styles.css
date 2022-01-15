@@ -60,10 +60,6 @@ header {
 .header__menu__list li a {
   display: inline;
   margin: 0.5rem;
-  -webkit-transition: -webkit-text-decoration-color 1s;
-  transition: -webkit-text-decoration-color 1s;
-  transition: text-decoration-color 1s;
-  transition: text-decoration-color 1s, -webkit-text-decoration-color 1s;
 }
 
 .header__menu__list li a:hover {
@@ -416,9 +412,9 @@ footer {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
   min-height: 8rem;
   margin-top: 3rem;
 }

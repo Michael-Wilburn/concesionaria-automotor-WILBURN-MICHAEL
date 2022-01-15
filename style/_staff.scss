@@ -1,23 +1,8 @@
-// .staff{
-//     display: flex;
-//     flex-wrap: wrap;
-//     justify-content: center; 
-// }
-// .staff__card{
-//     padding:0.5rem;
-//     text-align: center;
-//     margin: 0.5rem;
-//     border: solid 1px whitesmoke;
-//     border-radius: 0.5rem;
-// }
+
 .staff__card__img{
     max-width: 37.5rem; 
     max-height: 38rem;
 }
-// .staff__card__name{
-//     margin: 1rem;
-//     color: black;
-// }
 
 @media screen and (max-width:768px) {
     .staff__card__img{
