@@ -33,6 +33,15 @@ footer{
     width: 100%;
     text-align: center;
 }
+.btn-wsp{
+    position:fixed;
+    img{
+        max-width: 3rem;
+        max-height: 3rem;
+    }
+    bottom: 1rem;
+    right: 1rem;
+}
 
 @media screen and (max-width:768px) {
     .footer{
@@ -45,5 +54,10 @@ footer{
     .fab { 
         font-size: 1.5rem;
     }
+    .btn-wsp{
+        width:3rem;
+        height:3rem;
+        line-height: 2.9rem;
+	}
 
 }

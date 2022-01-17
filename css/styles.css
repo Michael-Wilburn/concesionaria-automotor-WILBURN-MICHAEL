@@ -358,6 +358,17 @@ footer {
   text-align: center;
 }
 
+.btn-wsp {
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+}
+
+.btn-wsp img {
+  max-width: 3rem;
+  max-height: 3rem;
+}
+
 @media screen and (max-width: 768px) {
   .footer {
     flex-wrap: wrap-reverse;
@@ -368,6 +379,11 @@ footer {
   }
   .fab {
     font-size: 1.5rem;
+  }
+  .btn-wsp {
+    width: 3rem;
+    height: 3rem;
+    line-height: 2.9rem;
   }
 }
 
