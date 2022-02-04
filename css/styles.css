@@ -35,6 +35,10 @@ header {
 .header__menu__list li a {
   display: inline;
   margin: 0.5rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: white;
+  transition: 0.5s;
 }
 
 .header__menu__list li a:hover {
@@ -42,17 +46,7 @@ header {
   text-decoration: underline;
   text-decoration-color: red;
   text-decoration-thickness: 3px;
-}
-
-.header__menu_list li {
-  display: inline;
-  text-decoration: none;
-}
-
-.header__menu__list li a {
-  text-decoration: none;
-  text-transform: uppercase;
-  color: white;
+  font-size: 0.9375rem;
 }
 
 label #sign-one,
@@ -135,7 +129,7 @@ main {
 }
 
 .box-img1 {
-  background: url(../assets/cars1.jpeg);
+  background: url(../assets/cars1.webp);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -145,7 +139,7 @@ main {
 }
 
 .box-img2 {
-  background: url(../assets/cars2.jpeg);
+  background: url(../assets/cars2.webp);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -155,7 +149,7 @@ main {
 }
 
 .box-img3 {
-  background: url(../assets/cars3.jpeg);
+  background: url(../assets/cars3.webp);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -331,16 +325,6 @@ footer {
   font-weight: bold;
 }
 
-.fab {
-  color: white;
-  font-size: 2rem;
-  margin: 0 0.5rem 0 0;
-}
-
-.fab:hover {
-  color: red;
-}
-
 .footer {
   display: flex;
   flex-wrap: wrap;
@@ -367,6 +351,41 @@ footer {
 .btn-wsp img {
   max-width: 3rem;
   max-height: 3rem;
+  transition: 0.5s;
+}
+
+.btn-wsp img:hover {
+  transform: scale(1.1);
+}
+
+.facebook {
+  color: white;
+  font-size: 2rem;
+  margin: 0 0.5rem 0 0;
+}
+
+.facebook:hover {
+  color: #1778F2;
+}
+
+.instagram {
+  color: white;
+  font-size: 2rem;
+  margin: 0 0.5rem 0 0;
+}
+
+.instagram:hover {
+  color: #E1306C;
+}
+
+.telegram {
+  color: white;
+  font-size: 2rem;
+  margin: 0 0.5rem 0 0;
+}
+
+.telegram:hover {
+  color: #229ED9;
 }
 
 @media screen and (max-width: 768px) {

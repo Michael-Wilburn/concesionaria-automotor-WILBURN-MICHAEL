@@ -17,28 +17,26 @@ header{
         margin: 0;
     }
 }
-.header__menu__list li{
-    display: inline;
-    margin: 0.5rem;
-}
-.header__menu__list li a{
-    display: inline;
-    margin: 0.5rem;
-}
-.header__menu__list li a:hover{
-    text-decoration-style: solid;
-    text-decoration: underline;
-    text-decoration-color: $decorationColor;
-    text-decoration-thickness: 3px;
-}
-.header__menu_list li{
-    display: inline;
-    text-decoration: none;
-}
-.header__menu__list li a {
-    text-decoration: none;
-    text-transform: uppercase;
-    color: $firstColor;
+.header__menu__list{
+    li{
+        display: inline;
+        margin: 0.5rem;
+        a{
+            display: inline;
+            margin: 0.5rem;
+            text-decoration: none;
+            text-transform: uppercase;
+            color: $firstColor;
+            transition: 0.5s;
+        }
+        a:hover {
+            text-decoration-style: solid;
+            text-decoration: underline;
+            text-decoration-color: $decorationColor;
+            text-decoration-thickness: 3px;
+            font-size: 0.9375rem;
+        }
+    }
 }
 label #sign-one,
 label #sign-two {
@@ -70,7 +68,7 @@ label #sign-two {
 .header__menu{
     display: none;  
 }
-.header__menu__list{
+.header__menu__list  {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -78,9 +76,6 @@ label #sign-two {
     align-items: center;
     width: 100vw;
     padding: 0;
-}
-.header__menu__list  {
-    
     li{ 
         display: flex;
         align-items: center;
@@ -100,7 +95,6 @@ label #sign-two {
     z-index: 10;
     background-color: $secondColor;
     opacity: 0.8;
-    
 }
 label #sign-one{
     display: block;
