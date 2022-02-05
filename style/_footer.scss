@@ -58,8 +58,6 @@ $mapRedes: (
     
 }
 
-
-
 @media screen and (max-width:768px) {
     .footer{
         flex-wrap: wrap-reverse;
@@ -72,6 +70,8 @@ $mapRedes: (
         font-size: 1.5rem;
     }
     .btn-wsp{
+        bottom: 4rem;
+        right: 1rem;
         width:3rem;
         height:3rem;
         line-height: 2.9rem;
