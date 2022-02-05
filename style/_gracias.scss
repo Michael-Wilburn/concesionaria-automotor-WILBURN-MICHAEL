@@ -6,30 +6,29 @@
   overflow: hidden;
 }
 .animation {
-
-color: $secondColor;
-position: relative;
-animation-name: animar;
-animation-duration: 6s;
-animation-iteration-count: infinite;
-animation-timing-function:linear;
-animation-delay: 0;
-font-size: 2rem;
-
-span{
-  font-size: 3rem;
-  font-style: italic;
-}
+  color: $secondColor;
+  position: relative;
+  animation-name: animar;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+  animation-timing-function:linear;
+  animation-delay: 0;
+  font-size: 2rem;
+  span{
+    font-size: 3rem;
+    font-style: italic;
+  }
 
 }
+
 @keyframes animar{
-0% {
-  top: 0;
-  left: -5%;
-}
+  0% {
+    top: 0;
+    left: -5%;
+  }
 
-100% {
-  top: 0;
-  left: 100%;
-}
+  100% {
+    top: 0;
+    left: 100%;
+  }
 }

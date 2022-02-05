@@ -7,34 +7,30 @@ main {
   justify-content: center;
   align-items: center;
 }
+@mixin parametrosbackground($size,$position,$repeat,$height) {
+  background-size: $size;
+  background-position: $position;
+  background-repeat: $repeat;
+  height: $height;
+}
 .box-img1 {
-  background: url(../assets/cars1.webp);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  background:url(../assets/cars1.webp);
+  @include parametrosbackground(cover,center,no-repeat,65vh);
   border-top: 1px solid $firstColor;
   border-bottom: 1px solid $firstColor;
-  height: 65vh;
 }
 .box-img2 {
-  background: url(../assets/cars2.webp);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  background:url(../assets/cars2.webp);
+  @include parametrosbackground(cover,center,no-repeat,65vh);
   border-top: 1px solid $firstColor;
   border-bottom: 1px solid $firstColor;
-  height: 65vh;
 }
 .box-img3 {
-  background: url(../assets/cars3.webp);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  background:url(../assets/cars3.webp);
+  @include parametrosbackground(cover,center,no-repeat,65vh);
   border-top: 1px solid $firstColor;
   border-bottom: 1px solid $firstColor;
-  height: 65vh;
 }
-
 // animacion clase
 .animate__animated {
   width: 100%;
@@ -61,7 +57,7 @@ main {
 @media screen and (max-width: 768px) {
  
   .box-img1,.box-img2,.box-img3{
-      height: 46vh;
+    height: 46vh;
   }
   .intro__title {
     font-size: 1.5rem;
@@ -74,6 +70,6 @@ main {
     width: 70vw;
   }
   .intro__point {
-    font-size: 1.5rem;
+   @extend.intro__title
   }
 }
