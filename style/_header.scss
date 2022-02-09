@@ -40,7 +40,7 @@ header{
 }
 label #sign-one,
 label #sign-two {
-    font-size: 2rem;
+    font-size: 1.5rem;
     display: none;
     cursor: pointer;
     margin-right: 1.5rem;
@@ -61,8 +61,8 @@ label #sign-two {
 
 .header__logo{
     img {
-        max-width: 2.5rem;
-        max-height: 2.5rem;
+        width: 2.5rem;
+        height: 2.5rem;
     }  
 }
 .header__menu{
@@ -83,8 +83,9 @@ label #sign-two {
         height: 3rem ;
         a{
             text-decoration: underline;
-            text-decoration-thickness: 0.2rem;
+            text-decoration-thickness: 0.1rem;
             text-decoration-color: $decorationColor;
+            color: $secondColor;
         }
     }
 }
@@ -93,8 +94,8 @@ label #sign-two {
     position: absolute;
     top: 5.05rem;
     z-index: 10;
-    background-color: $secondColor;
-    opacity: 0.8;
+    background-color: $firstColor;
+    opacity: 0.9;
 }
 label #sign-one{
     display: block;

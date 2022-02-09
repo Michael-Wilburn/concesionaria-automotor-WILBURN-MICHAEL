@@ -51,7 +51,7 @@ header {
 
 label #sign-one,
 label #sign-two {
-  font-size: 2rem;
+  font-size: 1.5rem;
   display: none;
   cursor: pointer;
   margin-right: 1.5rem;
@@ -71,8 +71,8 @@ label #sign-two {
     background-color: black;
   }
   .header__logo img {
-    max-width: 2.5rem;
-    max-height: 2.5rem;
+    width: 2.5rem;
+    height: 2.5rem;
   }
   .header__menu {
     display: none;
@@ -94,16 +94,17 @@ label #sign-two {
   }
   .header__menu__list li a {
     text-decoration: underline;
-    text-decoration-thickness: 0.2rem;
+    text-decoration-thickness: 0.1rem;
     text-decoration-color: red;
+    color: black;
   }
   #checkbox:checked ~ .header__menu {
     display: flex;
     position: absolute;
     top: 5.05rem;
     z-index: 10;
-    background-color: black;
-    opacity: 0.8;
+    background-color: white;
+    opacity: 0.9;
   }
   label #sign-one {
     display: block;
@@ -209,6 +210,7 @@ main {
 
 .card {
   cursor: pointer;
+  border: 0px solid rgba(0, 0, 0, 0.125);
 }
 
 .nav-link {
@@ -228,6 +230,7 @@ main {
 
 .card-title {
   color: black;
+  margin: 0;
 }
 
 .card-body {
@@ -244,6 +247,27 @@ main {
   color: white;
 }
 
+.caracteristicas {
+  display: inline-block;
+  margin: 0;
+  padding: 0.25rem;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.caracteristicasModal {
+  display: inline-block;
+  margin: 0;
+  padding: 0.25rem;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.nav-tabs .nav-link {
+  border-top-left-radius: 0rem;
+  border-top-right-radius: 0rem;
+}
+
 @media screen and (max-width: 1000px) {
   .card__grid {
     grid-template-columns: 1fr 1fr;
@@ -254,11 +278,21 @@ main {
   .card__grid {
     grid-template-columns: 1fr;
   }
+  .modal-title {
+    font-size: 1rem;
+  }
+  .caracteristicasModal {
+    margin: 0;
+    padding: 0.25rem;
+    font-size: 1rem;
+    font-weight: bold;
+    display: block;
+  }
 }
 
 .staff__card__img {
-  max-width: 25rem;
-  max-height: 36rem;
+  width: 28rem;
+  height: 37rem;
 }
 
 .card-title {
@@ -267,8 +301,15 @@ main {
 
 @media screen and (max-width: 768px) {
   .staff__card__img {
-    max-width: 90vw;
-    max-height: 36rem;
+    width: 27rem;
+    height: 36rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .staff__card__img {
+    width: 90vw;
+    height: 72vh;
   }
 }
 

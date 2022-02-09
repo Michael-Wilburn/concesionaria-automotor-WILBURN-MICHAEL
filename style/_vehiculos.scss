@@ -5,8 +5,9 @@
     column-gap: 1rem;
     margin: 1rem;
 }
-.card{
+.card {
     cursor: pointer;
+    border: 0px solid rgba(0,0,0,.125);
 }
 .nav-link {
     color: $firstColor;
@@ -22,6 +23,7 @@
 }
 .card-title{
     color: $secondColor;
+    margin: 0;
 }
 .card-body {
     padding: 0.5rem 0 0.5rem 0;
@@ -31,9 +33,27 @@
     cursor: pointer;
     color: $firstColor;
 }
-
 .whatsapp_link:hover{
     color: $firstColor;
+}
+.caracteristicas{
+    display:inline-block;
+    margin: 0;
+    padding:0.25rem;
+    font-size: 1rem;
+    font-weight: bold;
+}
+.caracteristicasModal{
+    display: inline-block;
+    margin: 0;
+    padding:0.25rem;
+    font-size: 1rem;
+    font-weight: bold;
+    
+}
+.nav-tabs .nav-link {
+    border-top-left-radius: 0rem;
+    border-top-right-radius: 0rem;
 }
 
 @media screen and (max-width:1000px) {
@@ -41,9 +61,18 @@
         grid-template-columns: 1fr 1fr;
     }
 }
-
 @media screen and (max-width:768px) {
     .card__grid{
         grid-template-columns: 1fr;
     }   
+    .modal-title{
+        font-size: 1rem;
+    }
+    .caracteristicasModal{
+        margin: 0;
+        padding:0.25rem;
+        font-size: 1rem;
+        font-weight: bold;
+        display: block;
+    }
 }

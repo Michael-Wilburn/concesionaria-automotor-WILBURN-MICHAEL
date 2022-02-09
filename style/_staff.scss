@@ -1,15 +1,19 @@
-
 .staff__card__img{
-    max-width: 25rem; 
-    max-height: 36rem;
+   width: 28rem; 
+   height: 37rem;
 }
 .card-title{
     color: $bootTextColor;
 }
-
 @media screen and (max-width:768px) {
     .staff__card__img{
-        max-width: 90vw; 
-        max-height: 36rem;
+       width: 27rem; 
+       height: 36rem;   
     }
+}
+@media screen and (max-width:480px) {
+    .staff__card__img{
+        width: 90vw; 
+        height: 72vh;
+     }
 }
