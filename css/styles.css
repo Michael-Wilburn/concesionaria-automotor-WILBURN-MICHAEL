@@ -342,14 +342,14 @@ main {
 
 iframe {
   width: 60vw;
-  height: 70vh;
+  height: 75vh;
   border: solid 1px white;
 }
 
 form {
   width: 30vw;
   padding: 2rem;
-  height: 70vh;
+  height: 75vh;
   border: solid 1px white;
   border-radius: 1rem;
 }
@@ -364,7 +364,7 @@ form {
   }
   form {
     width: 80vw;
-    height: 85vh;
+    height: auto;
   }
 }
 
